@@ -46,7 +46,7 @@ main {
 .profile-left {
     flex-basis: 50%;
     padding: 20px;
-    animation: fade-in-left 1s ease-out;
+    animation: fade-in-left 0.5s ease-out;
 }
 
 .profile-right {
@@ -61,7 +61,7 @@ main {
     display: block;
     max-width: 100%;
     height: auto;
-    animation: fade-in-right 1s ease-out;
+    animation: fade-in-right 0.5s ease-out;
 }
 
 @keyframes fade-in-left {
@@ -120,6 +120,11 @@ main {
     margin-left: 20px;
 }
 
+.profile+.cat-container {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
 
 
 .cat-container {
@@ -137,7 +142,6 @@ main {
     max-width: 300px;
     overflow: hidden;
     animation-name: fadeIn;
-    animation-duration: 0.5s;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
@@ -179,11 +183,67 @@ main {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
+@media only screen and (min-width: 1201px) {
+    main {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .cat-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .cat {
+        max-width: 300px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cat-container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .cat {
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 4px #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
 
 
 
