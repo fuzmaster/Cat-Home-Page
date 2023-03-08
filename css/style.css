@@ -1,18 +1,31 @@
+/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  /* Base styles */
+  body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+  }
+
+  
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-header {
+p {
+    line-height: 1.5;
+}
+  
+  /* Header styles */
+  header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,96 +33,74 @@ header {
     color: white;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-}
-
-header h1 {
-    margin: 10px 0 0 10px;
-    text-shadow: 0px 2px 4px #000000;
-}
-
-.header-icon {
+  }
+  
+  .header-icon {
     max-width: 50px;
     margin-right: 10px;
     filter: invert(1);
-}
-
-main {
+  }
+  
+  header h1 {
+    margin: 10px 0 10px 10px;
+    text-shadow: 0px 2px 4px #000000;
+    font-size: 3.5rem;
+  }
+  
+  /* Main styles */
+  main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     width: 1200px;
     margin: 0 auto;
-}
-
-.profile {
+  }
+  
+  /* Profile section */
+  .profile {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 20px;
     max-width: 900px;
-}
-
-.profile-left {
+  }
+  
+  .profile-left {
     flex-basis: 50%;
     padding: 20px;
     animation: fade-in-left 0.5s ease-out;
-}
-
-.btn {
-    margin-top: 20px;
-}
-
-
-.profile-right {
+  }
+  
+  .profile-right {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-
-.profile-right img {
+  }
+  
+  .profile-right img {
     display: block;
     max-width: 100%;
     height: auto;
     animation: fade-in-right 0.5s ease-out;
-}
-
-@keyframes fade-in-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.profile h1 {
+  }
+  
+  .profile h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-}
-
-.profile p {
+  }
+  
+  .profile p {
     line-height: 1.5;
-}
-
-.profile button {
+  }
+  
+  .btn {
+    margin-top: 20px;
+  }
+  
+  .profile button {
     background-color: #333;
     color: white;
     border: none;
@@ -119,34 +110,29 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     margin-top: 20px;
-}
-
-.profile button:hover {
+  }
+  
+  .profile button:hover {
     background-color: #19354A;
-}
-
-.profile img {
+  }
+  
+  .profile img {
     flex-basis: 50%;
     max-width: 100%;
     height: auto;
     margin-left: 20px;
-}
-
-.profile+.cat-container {
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-
-
-.cat-container {
+  }
+  
+  /* Cat container section */
+  .cat-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px;
-}
-
-.cat {
+    margin: 40px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cat {
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -156,17 +142,17 @@ main {
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
-}
-
-.cat-image {
+  }
+  
+  .cat-image {
     position: relative;
-}
-
-.cat-image img {
+  }
+  
+  .cat-image img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+  }
 
 .cat-image:hover .cat-overlay {
     animation-name: fadeIn;
@@ -191,6 +177,7 @@ main {
     opacity: 0;
 }
 
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -202,6 +189,7 @@ main {
 }
 
 @media only screen and (min-width: 1201px) {
+    
     main {
         width: 1200px;
         margin: 0 auto;
@@ -239,32 +227,28 @@ main {
     }
 }
 
-header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    text-shadow: 0px 2px 4px #000000;
-}
-
 @media only screen and (max-width: 768px) {
+    
+    .header-icon {
+        max-width: 30px;
+        margin-right: 10px;
+        filter: invert(1);
+      }
     header h1 {
         font-size: 2.5rem;
     }
+    
 }
 
 @media only screen and (max-width: 480px) {
     header h1 {
         font-size: 1.5rem;
     }
-}
-
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.5;
+    .header-icon {
+        max-width: 20px;
+        margin-right: 5px;
+        filter: invert(1);
+      }
 }
 
 footer {
