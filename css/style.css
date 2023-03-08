@@ -178,6 +178,50 @@ p {
     opacity: 0;
 }
 
+.single-cat-top-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.single-cat-top-profile .cat-description {
+  width: 60%;
+  margin-left: 30px; /* change margin-right to margin-left */
+}
+
+.single-cat-top-profile .cat-description h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.single-cat-top-profile .cat-description p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.single-cat-top-profile .cat-image {
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.single-cat-top-profile .cat-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+
+
+
 
 @keyframes fadeIn {
     from {
