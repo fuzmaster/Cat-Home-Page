@@ -64,6 +64,7 @@ p {
     align-items: center;
     margin: 20px;
     max-width: 900px;
+    border-bottom: 1px solid #ccc;
   }
   
   .profile-left {
@@ -252,35 +253,45 @@ p {
 }
 
 footer {
-    background-color: #263238;
-    color: #fff;
-    padding: 20px;
+  background-color: #263238;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.button-container.right {
+  text-align: right;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
 }
 
 .btn-footer {
-    background-color: #008CBA;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  background-color: #008CBA;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn-footer:hover {
-    background-color: #0077a2;
+  background-color: #0077a2;
 }
+
