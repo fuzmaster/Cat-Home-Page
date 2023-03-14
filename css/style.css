@@ -1,181 +1,180 @@
 /* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Base styles */
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  
+/* Base styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
-  
-  /* Header styles */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(0deg, #0B1527 0%, #19354A 100%);
-    color: white;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .header-icon {
-    max-width: 50px;
-    margin-right: 10px;
-    filter: invert(1);
-  }
-  
-  header h1 {
-    margin: 10px 0 10px 10px;
-    text-shadow: 0px 2px 4px #000000;
-    font-size: 3.5rem;
-  }
-  
-  /* Main styles */
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Profile section */
-  .profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px;
-    max-width: 900px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .profile-left {
-    flex-basis: 50%;
-    padding: 20px;
-    animation: fade-in-left 0.5s ease-out;
-  }
-  
-  .profile-right {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  
-  .profile-right img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    animation: fade-in-right 0.5s ease-out;
-  }
-  
-  .profile h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .profile p {
-    line-height: 1.5;
-  }
-  
-  .btn {
-    margin-top: 20px;
-  }
-  
-  .profile button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 20px;
-  }
-  
-  .profile button:hover {
-    background-color: #19354A;
-  }
-  
-  .profile img {
-    flex-basis: 50%;
-    max-width: 100%;
-    height: auto;
-    margin-left: 20px;
-  }
-  
-  /* Cat container section */
-  .cat-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .cat {
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    max-width: 300px;
-    overflow: hidden;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-  
-  .cat-image {
-    position: relative;
-  }
-  
-  .cat-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #0B1527 0%, #19354A 100%);
+  color: white;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-icon {
+  max-width: 50px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+header h1 {
+  margin: 10px 0 10px 10px;
+  text-shadow: 0px 2px 4px #000000;
+  font-size: 3.5rem;
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  max-width: 900px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-left {
+  flex-basis: 50%;
+  padding: 20px;
+  animation: fade-in-left 0.5s ease-out;
+}
+
+.profile-right {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  animation: fade-in-right 0.5s ease-out;
+}
+
+.profile h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  line-height: 1.5;
+}
+
+.btn-3d {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.profile img {
+  flex-basis: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Cat container section */
+.cat-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cat {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cat-image {
+  position: relative;
+}
+
+.cat-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .cat-image:hover .cat-overlay {
-    animation-name: fadeIn;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
 
 .cat-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
 }
 
 .single-cat-top-profile {
@@ -187,7 +186,8 @@ p {
 
 .single-cat-top-profile .cat-description {
   width: 60%;
-  margin-left: 30px; /* change margin-right to margin-left */
+  margin-left: 30px;
+  /* change margin-right to margin-left */
 }
 
 .single-cat-top-profile .cat-description h2 {
@@ -224,76 +224,78 @@ p {
 
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 1201px) {
-    
-    main {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
 
-    .cat-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 20px;
-    }
+  main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-    .cat {
-        max-width: 300px;
-        margin: 20px;
-    }
+  .cat-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .cat {
+    max-width: 300px;
+    margin: 20px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    main {
-        width: 100%;
-        padding: 10px;
-    }
+  main {
+    width: 100%;
+    padding: 10px;
+  }
 
-    .cat-container {
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+  .cat-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 
-    .cat {
-        max-width: 45%;
-        margin-bottom: 20px;
-    }
+  .cat {
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .header-icon {
-        max-width: 30px;
-        margin-right: 10px;
-        filter: invert(1);
-      }
-    header h1 {
-        font-size: 2.5rem;
-    }
-    
+
+  .header-icon {
+    max-width: 30px;
+    margin-right: 10px;
+    filter: invert(1);
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-    .header-icon {
-        max-width: 20px;
-        margin-right: 5px;
-        filter: invert(1);
-      }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-icon {
+    max-width: 20px;
+    margin-right: 5px;
+    filter: invert(1);
+  }
 }
 
 footer {
@@ -304,9 +306,9 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 80px;
 }
 
 .button-container.right {
@@ -338,4 +340,3 @@ footer a {
 .btn-footer:hover {
   background-color: #0077a2;
 }
-
