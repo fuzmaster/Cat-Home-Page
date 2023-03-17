@@ -1,84 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cat Website</title>
-    <!-- Your custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Your Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Our 3 Cats</title>
 </head>
-
 <body>
-    <header>
-        <img src="img/cat-solid.svg" alt="cat-icon" class="header-icon" />
-        <h1>Meet Our Cats</h1>
-    </header>
-    <main>
+  <header>
+    <h1>Welcome to our 3 Cats Website</h1>
+  </header>
+  
+  <section class="slideshow">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="img/group/CatComp-1.jpg" alt="Group photo 1">
+      </div>
+      <div class="slide fade">
+        <img src="img/group/CatComp-2.jpg" alt="Group photo 2">
+      </div>
+      <div class="slide fade">
+        <img src="img/group/CatComp-3.jpg" alt="Group photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="img/group/CatComp-4.jpg" alt="Group photo 4">
+      </div>
+      <div class="slide fade">
+        <img src="img/group/CatComp-5.jpg" alt="Group photo 5">
+      </div>
+    </div>
+  </section>
+  
+  <section class="image-gallery">
+    <h2>Our Cats</h2>
+    <div class="cat">
+      <a href="stan.html"><img src="img/stan/Stan-01.jpg" alt="Stan, the black cat"></a>
+      <h3>Stan</h3>
+    </div>
+    <div class="cat">
+      <a href="flutternutter.html"><img src="img/fluff/Fluff-01.jpg" alt="Flutternutter, the calico cat"></a>
+      <h3>Flutternutter</h3>
+    </div>
+    <div class="cat">
+      <a href="teddy.html"><img src="img/teddy/Teddy-01.jpg" alt="Teddy, the tuxedo cat"></a>
+      <h3>Teddy</h3>
+    </div>
+  </section>
 
-        <!-- Top banner -->
-
-        <section class="profile">
-            <section class="profile-left">
-                <h1>Welcome</h1>
-                <p>
-                    Welcome to our cat website, where we celebrate the feline members of
-                    our family! We're excited to share with you the unique personalities
-                    and stories of our three beloved cats: Stan, Fluffernutter, and
-                    Teddy.
-                </p>
-                <button class="btn-3d"><a href="#">Our Cats Together</a></button>
-            </section>
-            <section class="profile-right">
-                <a href="#"><img src="img/teddycoverpic.png" alt="cover" /></a>
-            </section>
-        </section>
-
-        <!-- 3 images -->
-
-        <section class="cat-container">
-            <a href="stanprofile.html" class="cat">
-                <div class="cat-image">
-                    <img src="img/stan/Stan-08.jpg" alt="Picture of Stan" />
-                    <div class="cat-overlay">
-                        <h2>Stan</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="fluffprofile.html" class="cat">
-                <div class="cat-image">
-                    <img src="img/fluff/Fluff-13.jpg" alt="Picture of Fluffernutter" />
-                    <div class="cat-overlay">
-                        <h2>Fluffernutter</h2>
-                    </div>
-                </div>
-            </a>
-            <a href="teddyprofile.html" class="cat">
-                <div class="cat-image">
-                    <img src="img/teddy/Teddy-04.jpg" alt="Picture of Teddy" />
-                    <div class="cat-overlay">
-                        <h2>Teddy</h2>
-                    </div>
-                </div>
-            </a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Jbritten Design. All rights reserved.</p>
-        <div class="button-container right">
-            <a href="#" class="btn-footer">Stan</a>
-            <a href="#" class="btn-footer">Fluff</a>
-            <a href="#" class="btn-footer">Teddy</a>
-            <a href="#" class="btn-footer">Portfolio</a>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+  <script src="js/slideshow.js"></script>
 </body>
-
 </html>
