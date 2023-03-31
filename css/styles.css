@@ -1,72 +1,62 @@
-* {
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-/* Add this CSS to your existing styles.css file */
-.slideshow-container {
-    max-height: 150px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    border-bottom: 2px solid #000; /* Adds a border below the slideshow */
-  }
-  
-  .slide img {
-    max-height: 150px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .fade {
-    animation: fade 3s linear infinite;
-    opacity: 0;
-    position: absolute;
-  }
-  
-  @keyframes fade {
-    0% {opacity: 1;}
-    20% {opacity: 1;}
-    25% {opacity: 0;}
-    95% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  
-  .image-gallery {
-    margin-top: 20px; /* Adds some space between the slideshow and the images */
-  }
-  
-  
-  .cat {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-  }
-  
-  .cat img {
-    width: 100%;
-    max-width: 200px;
-  }
-  
-  .cat-feature {
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+    background-color: #EAEDF5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navigation-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
-  
-  .cat-feature img {
+    margin-bottom: 20px;
+}
+
+.upper-nav {
+    font-size: 24px;
+}
+
+.lower-nav {
+    display: flex;
+}
+
+.lower-nav-text li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.lower-nav-text li:last-child {
+    margin-right: 0;
+}
+
+.cat-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cat {
+    text-align: center;
+}
+
+.cat img {
     max-width: 300px;
-    margin-right: 2rem;
-  }
-  
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cat h2 {
+    font-size: 24px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
