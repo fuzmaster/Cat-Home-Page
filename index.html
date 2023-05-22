@@ -2,51 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Website</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Cat Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="navigation-container">
-            <div class="upper-nav">
-                <header>Our <img src="img/cat-solid.svg" alt="cat icon"> Cats</header>
+    <header>
+        <h1 class="title">Our Cats</h1>
+    </header>
+    <main>
+        <section class="cat-grid">
+            <div class="cat-card" id="stan">
+                <img src="img/stan/Stan-06.jpg" alt="Black mixed Siamese cat named Stan" class="cat-image">
+                <h2 class="cat-name">Stan</h2>
             </div>
-            <div class="lower-nav">
-                <ul class="lower-nav-text">
-                    <li><a href="#">Stan</a></li>
-                    <li><a href="#">Fluffernutter</a></li>
-                    <li><a href="#">Teddy</a></li>
-                </ul>
+            <div class="cat-card" id="fluffernutter">
+                <img src="img/fluff/Fluff-14.jpg" alt="Calico cat named Fluffernutter" class="cat-image">
+                <h2 class="cat-name">Fluffernutter</h2>
             </div>
-        </div>
-
-        <div class="main-content">
-            <h1>Welcome to our Cat Website</h1>
-            <p>Meet our three adorable cats:</p>
-
-            <div class="cat-container">
-                <div class="cat">
-                    <img src="img/stan.jpg" alt="picture of black cat named Stan">
-                    <h2>Stan</h2>
-                </div>
-                <div class="cat">
-                    <img src="img/fluffernutter.jpg" alt="picture of calico cat named Fluffernutter">
-                    <h2>Fluffernutter</h2>
-                </div>
-                <div class="cat">
-                    <img src="img/teddy.jpg" alt="picture of tuxedo cat named Teddy">
-                    <h2>Teddy</h2>
-                </div>
+            <div class="cat-card" id="teddy">
+                <img src="img/teddy/Teddy-02.jpg" alt="Tuxedo cat named Teddy" class="cat-image">
+                <h2 class="cat-name">Teddy</h2>
             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-buttons">
+            <!-- Add your social buttons here -->
         </div>
-
-        <div class="footer">
-            <p>Jbritten 2023</p>
-        </div>
-    </div>
-
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
